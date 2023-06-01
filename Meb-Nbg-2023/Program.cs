@@ -1,7 +1,11 @@
+using Meb_Nbg_2023.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<NbgDbContext>();
 
 var app = builder.Build();
 

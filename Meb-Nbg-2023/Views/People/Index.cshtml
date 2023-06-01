@@ -1,0 +1,16 @@
+﻿@model Meb_Nbg_2023.Models.Person
+@{
+    ViewData["Title"] = "Index of People";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1> @ViewData["Title"]</h1>
+
+This is the people home page <br />
+
+name = @Html.Raw(Model==null?"null value":Model.Name)
+<br />
+id =  @Html.Raw(Model==null?"null value":Model.Id)
+<br />
+ 
+
